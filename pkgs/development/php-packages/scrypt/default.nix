@@ -1,7 +1,8 @@
 { buildPecl, lib, fetchFromGitHub }:
 
 let
-  version = "2.0.1";
+  version = "v2.0.1";
+  revision =  "845b889bdbe817afe1633237f8fc68667c7a700b";
 in buildPecl {
   inherit version;
 
@@ -10,8 +11,8 @@ in buildPecl {
     src = fetchFromGitHub {
       owner = "DomBlack";
       repo = "php-scrypt";
-      rev = version;
-      sha256 = "sha256-1rq9gr8r280g8qi6k71r2413w96d84dir2cms5f6n6ipiq73qh15";
+      rev = revision;
+      sha256 = "sha256-JUA8Do43Gmtc0ZWJHBtBzSQ+AhE5nGkiRg8gkVF+Cec=";
     };
 
     doCheck = true;
