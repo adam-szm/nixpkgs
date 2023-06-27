@@ -240,6 +240,8 @@ lib.makeScope pkgs.newScope (self: with self; {
 
     maxminddb = callPackage ../development/php-packages/maxminddb { };
 
+    mcrypt = callPackage ../development/php-packages/mcrypt { };
+
     memcached = callPackage ../development/php-packages/memcached { };
 
     mongodb = callPackage ../development/php-packages/mongodb { };
