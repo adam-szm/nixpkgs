@@ -18,7 +18,7 @@ in buildPecl {
     doCheck = true;
     checkTarget = "test";
 
-    zendExtension = true;
+    zendExtension = false;
 
     meta = with lib; {
       changelog = "https://github.com/DomBlack/php-scrypt/releases/tag/${version}";
